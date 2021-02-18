@@ -13,11 +13,15 @@ body {
     background-color: #141415;
     font-size: 16px;
     font-family: 'Times New Roman', Times, serif;
+    overflow-x: hidden;
 }
+
+/* BARRA DE NAVEGAÇÃO PRINCIPAL */
 
 .container-navbar {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
 
@@ -25,7 +29,7 @@ body {
 }
 
 .container-navbar a {
-    font-size: 16px;
+    font-size: 17px;
     font-family: Roboto, helvetica, arial, sans-serif;
     margin-right: 10px;
 }
@@ -38,6 +42,7 @@ a {
     color: #fff;
     text-decoration: none;
     letter-spacing: 0px;
+    
 }
 
 .logo {
@@ -86,22 +91,8 @@ nav i {
     justify-content: flex-start;
 }
 
-.login {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.botao-experimente {
-    background-color: var(--vermelho);
-    padding: 8px;
-    border: none;
-    border-radius: 5px;
-
-    color: var(--branco);
-
-    cursor: pointer;
+.search-bar form {
+    margin-left: 25px;
 }
 
 input {
@@ -124,3 +115,106 @@ input {
 ::-webkit-input-placeholder  { color:#ccc; font-size: 15px; }
 input:-moz-placeholder { color:#ccc; }
 textarea:-moz-placeholder { color:#ccc; }
+
+
+
+.login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.login a p {
+    font-size: 10px;
+    text-align: center;
+}
+
+.botao-experimente {
+    background-color: var(--vermelho);
+    padding: 4px;
+    border: none;
+    border-radius: 7px;
+
+
+    display: flex;
+    align-items: center;
+
+    color: var(--branco);
+
+    cursor: pointer;
+    width: 120px;
+    height: 30px;
+}
+
+/* SEÇÃO DE CAPA */
+
+.capa-principal {
+    /* background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url("../img/once-capa.jpg"); */
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url("../img/guardioes.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 620px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.box-filme {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.box-filme-2 {
+    width: 100%;
+    height: 250px;
+    display: block;
+}
+
+.box-filme-min {
+    width: 50%;
+    height: 170px;
+    display: block;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    padding-left: 40px;
+    padding-top: 70px;
+
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    color: #fff;
+}
+
+.titulo-secao {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: Roboto, helvetica, arial, sans-serif;
+    padding-bottom: 30px;
+}
+
+
+@media screen and (max-width: 850px) {
+    .container-navbar {
+        flex-direction: column;
+    }
+    .capa-principal {
+        background-size: contain;
+    }
+}

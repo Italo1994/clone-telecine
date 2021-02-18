@@ -4,9 +4,15 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="img/favicon-telecine.png">
 
         <!--CSS BOOSTRAP-->
         
+        <!--owl css-->
+        <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
+
+        <script src="js/owl/main.js"></script>
 
         <title>Telecine</title>
     </head>
@@ -16,7 +22,9 @@
 
                 <div class="logo grow-1">
                     <a href="#">
+                        <p style="font-size: 18px; font-weight: 700;">
                         <span class="logo-white">TELE</span><span class="logo-red">CINE</span>
+                        </p>
                     </a>
                 </div>
 
@@ -24,17 +32,17 @@
                     <a href="#">
                         LANÇAMENTOS
                     </a>
-                    <a href="#">
-                        FRANQUIAS <i class="fas fa-angle-down"></i>
+                    <a href="#" onmouseover="trocarCorIcone(this)" onmouseout="voltarCorIcone(this)">
+                        FRANQUIAS <i id="icone-franquia" class="fas fa-angle-down"></i>
                     </a>
-                    <a href="#">
-                        CINELISTS <i class="fas fa-angle-down"></i>
+                    <a href="#" onmouseover="trocarCorIcone(this)" onmouseout="voltarCorIcone(this)">
+                        CINELISTS <i id="icone-cinelists" class="fas fa-angle-down"></i>
                     </a>
-                    <a href="#">
-                        GÊNEROS <i class="fas fa-angle-down"></i>
+                    <a href="#" onmouseover="trocarCorIcone(this)" onmouseout="voltarCorIcone(this)">
+                        GÊNEROS <i id="icone-genero" class="fas fa-angle-down"></i>
                     </a>
-                    <a href="#">
-                        NA TV <i class="fas fa-angle-down"></i>
+                    <a href="#" onmouseover="trocarCorIcone(this)" onmouseout="voltarCorIcone(this)">
+                        NA TV <i id="icone-natv" class="fas fa-angle-down"></i>
                     </a>
                 </nav>
 
@@ -50,13 +58,400 @@
                 <div class="login grow-1">
                     <a href="#">ENTRAR</a>
 
-                    <button type="button" class="botao-experimente">EXPERIMENTE GRÁTIS</button>
+                    <a href="#" class="botao-experimente">
+                        <p>EXPERIMENTE GRÁTIS</p>
+                    </a>
                 </div>
 
             </div>
         </header>
 
+        <main>
+            <section class="capa-principal">
+                
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img class="box-filme-min" src="img/img-carousel/min1.jpg" alt="filme 1" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme-min" src="img/img-carousel/min2.jpg" alt="filme 2" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme-min" src="img/img-carousel/min3.jpg" alt="filme 3" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme-min" src="img/img-carousel/min4.jpg" alt="filme 4" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme-min" src="img/img-carousel/min5.jpg" alt="filme 5" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme-min" src="img/img-carousel/min6.jpg" alt="filme 6" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme-min" src="img/img-carousel/min7.jpg" alt="filme 7" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme-min" src="img/img-carousel/min8.jpg" alt="filme 8" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme-min" src="img/img-carousel/min9.jpg" alt="filme 9" srcset="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme-min" src="img/img-carousel/min10.jpg" alt="filme 10" srcset="">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <section id="secao-lancamentos">
+            <div class="container">
+
+                <div class="wrapper">
+                
+                <a href="#">
+                <h2 class="titulo-secao">LANÇAMENTOS <i class="fas fa-angle-right"></i> </h2>
+                </a>
+
+                <div class="owl-carousel owl-theme">
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme" src="img/img-carousel/min1.jpg" alt="filme 1" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme" src="img/img-carousel/min2.jpg" alt="filme 2" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme" src="img/img-carousel/min3.jpg" alt="filme 3" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme" src="img/img-carousel/min4.jpg" alt="filme 4" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme" src="img/img-carousel/min5.jpg" alt="filme 5" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme" src="img/img-carousel/min6.jpg" alt="filme 6" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme" src="img/img-carousel/min7.jpg" alt="filme 7" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme" src="img/img-carousel/min8.jpg" alt="filme 8" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme" src="img/img-carousel/min9.jpg" alt="filme 9" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme" src="img/img-carousel/min10.jpg" alt="filme 10" srcset="">
+                        </div>
+                    </a>
+                </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="em-breve">
+
+            <div class="container">
+
+                <div class="wrapper">
+                
+                <a href="#">
+                <h2 class="titulo-secao">EM BREVE NO TELECINE  <i class="fas fa-angle-right"></i> </h2>
+                </a>
+
+                <div class="owl-carousel owl-theme">
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme-2" src="img/img-carousel/min1.jpg" alt="filme 1" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme-2" src="img/img-carousel/min2.jpg" alt="filme 2" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme-2" src="img/img-carousel/min3.jpg" alt="filme 3" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme-2" src="img/img-carousel/min4.jpg" alt="filme 4" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme-2" src="img/img-carousel/min5.jpg" alt="filme 5" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme-2" src="img/img-carousel/min6.jpg" alt="filme 6" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme-2" src="img/img-carousel/min7.jpg" alt="filme 7" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme-2" src="img/img-carousel/min8.jpg" alt="filme 8" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme-2" src="img/img-carousel/min9.jpg" alt="filme 9" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme-2" src="img/img-carousel/min10.jpg" alt="filme 10" srcset="">
+                        </div>
+                    </a>
+                </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="top-40">
+
+            <div class="container">
+
+                <div class="wrapper">
+                
+                <a href="#">
+                <h2 class="titulo-secao">TOP 40 SUCESSOS QUE SÓ O TELECINE TEM  <i class="fas fa-angle-right"></i> </h2>
+                </a>
+
+                <div class="owl-carousel owl-theme">
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme-2" src="img/img-carousel/min1.jpg" alt="filme 1" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme-2" src="img/img-carousel/min2.jpg" alt="filme 2" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme-2" src="img/img-carousel/min3.jpg" alt="filme 3" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme-2" src="img/img-carousel/min4.jpg" alt="filme 4" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme-2" src="img/img-carousel/min5.jpg" alt="filme 5" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme-2" src="img/img-carousel/min6.jpg" alt="filme 6" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme-2" src="img/img-carousel/min7.jpg" alt="filme 7" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme-2" src="img/img-carousel/min8.jpg" alt="filme 8" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme-2" src="img/img-carousel/min9.jpg" alt="filme 9" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme-2" src="img/img-carousel/min10.jpg" alt="filme 10" srcset="">
+                        </div>
+                    </a>
+                </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="premiere">
+
+            <div class="container">
+
+                <div class="wrapper">
+                
+                <a href="#">
+                <h2 class="titulo-secao">PREMIÈRE TELECINE  <i class="fas fa-angle-right"></i> </h2>
+                </a>
+
+                <div class="owl-carousel owl-theme">
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme-2" src="img/img-carousel/min1.jpg" alt="filme 1" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme-2" src="img/img-carousel/min2.jpg" alt="filme 2" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme-2" src="img/img-carousel/min3.jpg" alt="filme 3" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme-2" src="img/img-carousel/min4.jpg" alt="filme 4" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme-2" src="img/img-carousel/min5.jpg" alt="filme 5" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme-2" src="img/img-carousel/min6.jpg" alt="filme 6" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme-2" src="img/img-carousel/min7.jpg" alt="filme 7" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme-2" src="img/img-carousel/min8.jpg" alt="filme 8" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme-2" src="img/img-carousel/min9.jpg" alt="filme 9" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme-2" src="img/img-carousel/min10.jpg" alt="filme 10" srcset="">
+                        </div>
+                    </a>
+                </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="premiados">
+
+            <div class="container">
+
+                <div class="wrapper">
+                
+                <a href="#">
+                <h2 class="titulo-secao">FILMES PREMIADOS  <i class="fas fa-angle-right"></i> </h2>
+                </a>
+
+                <div class="owl-carousel owl-theme">
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme-2" src="img/img-carousel/min1.jpg" alt="filme 1" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme-2" src="img/img-carousel/min2.jpg" alt="filme 2" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme-2" src="img/img-carousel/min3.jpg" alt="filme 3" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme-2" src="img/img-carousel/min4.jpg" alt="filme 4" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme-2" src="img/img-carousel/min5.jpg" alt="filme 5" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme-2" src="img/img-carousel/min6.jpg" alt="filme 6" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme-2" src="img/img-carousel/min7.jpg" alt="filme 7" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme-2" src="img/img-carousel/min8.jpg" alt="filme 8" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme-2" src="img/img-carousel/min9.jpg" alt="filme 9" srcset="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="item">
+                            <img class="box-filme-2" src="img/img-carousel/min10.jpg" alt="filme 10" srcset="">
+                        </div>
+                    </a>
+                </div>
+
+                </div>
+
+            </div>
+
+        </section>
 
         <script src="https://kit.fontawesome.com/fb53d33af1.js" crossorigin="anonymous"></script>
+
+        <script src="js/owl/jquery.min.js"></script>
+        <script src="js/owl/owl.carousel.min.js"></script>
+        <script src="js/owl/setup.js"></script>
     </body>
 </html>
