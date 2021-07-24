@@ -177,22 +177,21 @@ textarea:-moz-placeholder { color:#ccc; }
 }
 
 .titulo-genero {
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 21px;
+    font-weight: 600;
     font-family: Roboto, helvetica, arial, sans-serif;
     padding-bottom: 30px;
     padding-left: 15px;
 }
 
 .carousel {
-    width: 100px;
     display: flex;
 
 }
 
 .carousel img {
-    margin-left: 20px;
-    width: 200px;
+    margin-left: 15px;
+    width: 220px;
 }
 
 .box-filme {
@@ -208,8 +207,8 @@ textarea:-moz-placeholder { color:#ccc; }
 }
 
 .box-filme-min {
-    width: 120px;
-    height: 200px;
+    width: 320px;
+    height: 290px;
     display: block;
 }
 
@@ -347,7 +346,12 @@ textarea:-moz-placeholder { color:#ccc; }
 
     .grid-container {
         width: 85%;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #area-copy {
+        font-size: 12px;
     }
 }
 
@@ -375,9 +379,13 @@ textarea:-moz-placeholder { color:#ccc; }
         font-size: 13px;
     }
 
+    .flex::nth-child(2) {
+        border-left: 1px solid rgb(34, 34, 37);
+    }
+
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 900px) {
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
     }
