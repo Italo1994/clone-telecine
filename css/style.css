@@ -150,6 +150,7 @@ textarea:-moz-placeholder { color:#ccc; }
     align-items: center;
 
     color: var(--branco);
+    font-weight: 600;
 
     cursor: pointer;
     width: 120px;
@@ -173,6 +174,14 @@ textarea:-moz-placeholder { color:#ccc; }
 .secao-filmes {
     width: 100%;
     margin-bottom: 40px;
+}
+
+.titulo-genero {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: Roboto, helvetica, arial, sans-serif;
+    padding-bottom: 30px;
+    padding-left: 15px;
 }
 
 .carousel {
@@ -241,7 +250,7 @@ textarea:-moz-placeholder { color:#ccc; }
     width: 95%;
     height: 85%;
     margin: 0 auto;
-    padding-top: 10px;
+    padding: 15px 0;
     border-top: 1px solid rgb(34, 34, 37);
 }
 
@@ -250,17 +259,34 @@ textarea:-moz-placeholder { color:#ccc; }
     flex-direction: column;
 }
 
+.title {
+    width: 100%;
+    padding: 20px;
+    padding-left: 0;
+}
+
 .links-area {
     display: flex;
 }
 
+.left-area {
+    width: 50%;
+    padding-top: 0;
+}
+
+.right-area {
+    width: 50%;
+    padding-top: 0;
+}
+
 .link-group {
     padding: 5px;
+    width: 100%;
 }
 
 .link-group a {
     color: #fff;
-    font-size: 15px;
+    font-size: 14px;
     display: inline-block;
     margin-top: 20px;
 }
@@ -276,24 +302,9 @@ textarea:-moz-placeholder { color:#ccc; }
     background-color: #000;
     border: none;
     border-radius: 25px;
+    font-weight: 600;
 }
 
-.title {
-    width: 100%;
-    padding: 20px;
-}
-
-.left-area {
-    width: 50%;
-    padding: 15px;
-    padding-top: 0;
-}
-
-.right-area {
-    width: 50%;
-    padding: 15px;
-    padding-top: 0;
-}
 
 #area-copy {
     display: flex;
@@ -318,7 +329,7 @@ textarea:-moz-placeholder { color:#ccc; }
 }
 
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
     .container-navbar {
         flex-direction: column;
     }
@@ -336,10 +347,11 @@ textarea:-moz-placeholder { color:#ccc; }
 
     .grid-container {
         width: 85%;
+        grid-template-columns: 1fr;
     }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 768px) {
     .container-navbar {
         flex-direction: row;
     }
@@ -353,6 +365,30 @@ textarea:-moz-placeholder { color:#ccc; }
 
     .search-bar {
         display: none;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .link-group a {
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width: 920px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .link-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex {
+        padding-top: 25px;
     }
 }
 
