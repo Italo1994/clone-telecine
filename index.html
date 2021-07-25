@@ -16,6 +16,8 @@
 
         <script type="text/javascript" src="js/slick.js"></script>
 
+        <script type="text/javascript" src="js/main.js"></script>
+
         <!-- Google Font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +26,7 @@
         <title>Assistir filmes online. Experimente 30 dias grátis.</title>
     </head>
     <body>
-        <header>
+        <header class="header">
             <div class="container-navbar">
 
                 <div class="logo grow-1">
@@ -39,16 +41,16 @@
                     <a href="#">
                         LANÇAMENTOS
                     </a>
-                    <a href="#" onmouseover="trocarCorIcone(this)" onmouseout="voltarCorIcone(this)">
+                    <a href="#">
                         FRANQUIAS <i id="icone-franquia" class="fas fa-angle-down"></i>
                     </a>
-                    <a href="#" onmouseover="trocarCorIcone(this)" onmouseout="voltarCorIcone(this)">
+                    <a href="#">
                         CINELISTS <i id="icone-cinelists" class="fas fa-angle-down"></i>
                     </a>
-                    <a href="#" onmouseover="trocarCorIcone(this)" onmouseout="voltarCorIcone(this)">
+                    <a href="#">
                         GÊNEROS <i id="icone-genero" class="fas fa-angle-down"></i>
                     </a>
-                    <a href="#" onmouseover="trocarCorIcone(this)" onmouseout="voltarCorIcone(this)">
+                    <a href="#">
                         NA TV <i id="icone-natv" class="fas fa-angle-down"></i>
                     </a>
                 </nav>
@@ -68,54 +70,88 @@
                     <a href="#" class="botao-experimente">
                         <p>EXPERIMENTE GRÁTIS</p>
                     </a>
+
+                    <a id="botao-dropdown" href="#">
+                       
+                    </a>
                 </div>
 
             </div>
+
+            <div id="dropdown-menu">
+                <a href="#" class="dropdown-link">
+                    LANÇAMENTOS
+                </a>
+                <a href="#">
+                    FRANQUIAS <i id="icone-franquia" class="fas fa-angle-down"></i>
+                </a>
+                <a href="#">
+                    CINELISTS <i id="icone-cinelists" class="fas fa-angle-down"></i>
+                </a>
+                <a href="#">
+                    GÊNEROS <i id="icone-genero" class="fas fa-angle-down"></i>
+                </a>
+                <a href="#">
+                    NA TV <i id="icone-natv" class="fas fa-angle-down"></i>
+                </a>
+                <a href="#">ENTRAR</a>
+
+                <a href="#" class="botao-experimente">
+                    <p>EXPERIMENTE GRÁTIS</p>
+                </a>    
+            </div>
+
         </header>
 
         <main>
             <section class="capa-principal">
+
+                <div id="carousel-capa">
+                    <img class="selected" src="img/guardioes.jpg" alt="image1">
+                    <img id="teste" src="img/falcao.jpg" alt="image2">
+                    <img src="img/mortal-kombat.jpg" alt="image3">
+                </div>
                 
                 <div class="carousel">
                     
                     <a href="#">
-                        <img class="box-filme-min" src="img/img-carousel/min1.jpg" alt="filme 1" srcset="">
+                        <img class="box-filme" src="img/img-carousel/min1.jpg" alt="filme 1" srcset="">
                     </a>       
                     
                     <a href="#">      
-                        <img class="box-filme-min" src="img/img-carousel/min2.jpg" alt="filme 2" srcset="">
+                        <img class="box-filme" src="img/img-carousel/min2.jpg" alt="filme 2" srcset="">
                     </a>     
                     
                     <a href="#">    
-                        <img class="box-filme-min" src="img/img-carousel/min3.jpg" alt="filme 3" srcset="">
+                        <img class="box-filme" src="img/img-carousel/min3.jpg" alt="filme 3" srcset="">
                     </a>       
                       
                     <a href="#">      
-                        <img class="box-filme-min" src="img/img-carousel/min4.jpg" alt="filme 4" srcset="">
+                        <img class="box-filme" src="img/img-carousel/min4.jpg" alt="filme 4" srcset="">
                     </a>        
                     
                     <a href="#">      
-                        <img class="box-filme-min" src="img/img-carousel/min5.jpg" alt="filme 5" srcset="">
+                        <img class="box-filme" src="img/img-carousel/min5.jpg" alt="filme 5" srcset="">
                     </a> 
 
                     <a href="#">      
-                        <img class="box-filme-min" src="img/img-carousel/min6.jpg" alt="filme 6" srcset="">
+                        <img class="box-filme" src="img/img-carousel/min6.jpg" alt="filme 6" srcset="">
                     </a>
                     
                     <a href="#">       
-                        <img class="box-filme-min" src="img/img-carousel/min7.jpg" alt="filme 7" srcset="">
+                        <img class="box-filme" src="img/img-carousel/min7.jpg" alt="filme 7" srcset="">
                     </a>
                     
                     <a href="#">      
-                        <img class="box-filme-min" src="img/img-carousel/min8.jpg" alt="filme 8" srcset="">
+                        <img class="box-filme" src="img/img-carousel/min8.jpg" alt="filme 8" srcset="">
                     </a>
                     
                     <a href="#"> 
-                        <img class="box-filme-min" src="img/img-carousel/min9.jpg" alt="filme 9" srcset="">
+                        <img class="box-filme" src="img/img-carousel/min9.jpg" alt="filme 9" srcset="">
                     </a>
                     
                     <a href="#">  
-                        <img class="box-filme-min" src="img/img-carousel/min10.jpg" alt="filme 10" srcset="">
+                        <img class="box-filme" src="img/img-carousel/min10.jpg" alt="filme 10" srcset="">
                     </a>
                     
                 </div>

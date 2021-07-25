@@ -24,6 +24,10 @@ body {
     overflow-x: hidden;
 }
 
+.header {
+    position: relative;
+}
+
 /* BARRA DE NAVEGAÇÃO PRINCIPAL */
 
 .container-navbar {
@@ -32,7 +36,6 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-
     height: 60px;
 }
 
@@ -40,6 +43,37 @@ body {
     font-size: 17px;
     font-family: Roboto, helvetica, arial, sans-serif;
     margin-right: 10px;
+}
+
+#dropdown-menu {
+    position: absolute;
+    background-color: #141415;
+    top: 60px;
+    display: none;
+    width: 100%;
+    z-index: 1;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#dropdown-menu a {
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+    border-bottom: 1px solid rgb(34, 34, 37);
+}
+
+#botao-dropdown {
+    display: none;
+    background-image: url("../img/dropdown-icon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 30px;
 }
 
 .grow-1 {
@@ -126,7 +160,6 @@ input:-moz-placeholder { color:#ccc; }
 textarea:-moz-placeholder { color:#ccc; }
 
 
-
 .login {
     display: flex;
     flex-direction: row;
@@ -160,7 +193,7 @@ textarea:-moz-placeholder { color:#ccc; }
 /* SEÇÃO DE CAPA */
 
 .capa-principal {
-    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url("../img/guardioes.jpg");
+    /*background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url("../img/guardioes.jpg");*/
     background-size: cover;
     background-repeat: no-repeat;
     height: 620px;
@@ -171,9 +204,27 @@ textarea:-moz-placeholder { color:#ccc; }
     justify-content: flex-end;
 }
 
+#carousel-capa {
+    width: 100%;
+    height: 618px;
+    position: relative;
+}
+
+#carousel-capa img {
+    width: 100%;
+    height: 618px;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+#carousel-capa img.selected {
+    opacity: 1;
+}
+
 .secao-filmes {
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .titulo-genero {
@@ -186,7 +237,8 @@ textarea:-moz-placeholder { color:#ccc; }
 
 .carousel {
     display: flex;
-
+    z-index: 1;
+    padding-bottom: 30px;
 }
 
 .carousel img {
@@ -197,12 +249,6 @@ textarea:-moz-placeholder { color:#ccc; }
 .box-filme {
     width: 120px;
     height: 200px;
-    display: block;
-}
-
-.box-filme-2 {
-    width: 100%;
-    height: 250px;
     display: block;
 }
 
@@ -234,6 +280,7 @@ textarea:-moz-placeholder { color:#ccc; }
     color: #fff;
 
     padding: 15px;
+    padding-top: 30px;
     width: 100%;
 }
 
@@ -332,6 +379,20 @@ textarea:-moz-placeholder { color:#ccc; }
     .container-navbar {
         flex-direction: column;
     }
+
+    #botao-dropdown {
+        display: inline-block;
+    }
+
+    .botao-experimente {
+        width: 100%;
+        padding: 0;
+    }
+
+    .login a {
+        display: none;
+    }
+
     .capa-principal {
         background-size: contain;
     }
