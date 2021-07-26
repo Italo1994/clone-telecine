@@ -7,11 +7,6 @@
         display: inline-block;
     }
 
-    .botao-experimente {
-        width: 100%;
-        padding: 0;
-    }
-
     .login a {
         display: none;
     }
@@ -50,6 +45,10 @@
     #area-copy {
         font-size: 12px;
     }
+
+    .titulo-main {
+      font-size: 25px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -68,6 +67,11 @@
         display: none;
     }
 
+    .precos-planos {
+      width: 100%;
+      grid-template-columns: 1fr 1fr;
+    }
+
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -80,9 +84,18 @@
         border-left: 1px solid rgb(34, 34, 37);
     }
 
+    .titulo-main {
+      font-size: 40px;
+    }
+
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 850px) {
+    .precos-planos {
+      width: 100%;
+      grid-template-columns: 1fr 1fr;
+    }
+
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -94,6 +107,10 @@
 
     .flex {
         padding-top: 25px;
+    }
+
+    .titulo-main {
+      font-size: 40px;
     }
 }
 
