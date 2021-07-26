@@ -69,10 +69,11 @@ body {
 
 #botao-dropdown {
     display: none;
-    background-image: url("../img/dropdown-icon.png");
-    background-repeat: no-repeat;
+    background-image: url("../img/botao-mobile.png");
     background-size: contain;
-    width: 40px;
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 4px;
+    width: 35px;
     height: 30px;
 }
 
@@ -365,104 +366,10 @@ textarea:-moz-placeholder { color:#ccc; }
 }
 
 
-
 /* ==== TIPOGRAFIA ==== */
 .titulo-secao {
     font-size: 15px;
     font-weight: 600;
     font-family: Roboto, helvetica, arial, sans-serif;
     color: #fff;
-}
-
-
-@media screen and (max-width: 600px) {
-    .container-navbar {
-        flex-direction: column;
-    }
-
-    #botao-dropdown {
-        display: inline-block;
-    }
-
-    .botao-experimente {
-        width: 100%;
-        padding: 0;
-    }
-
-    .login a {
-        display: none;
-    }
-
-    .capa-principal {
-        background-size: contain;
-    }
-
-    .nav-filmes {
-        display: none;
-    }
-
-    .search-bar {
-        display: none;
-    }
-
-    .grid-container {
-        width: 85%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #area-copy {
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .container-navbar {
-        flex-direction: row;
-    }
-    .capa-principal {
-        background-size: contain;
-    }
-
-    .nav-filmes {
-        display: none;
-    }
-
-    .search-bar {
-        display: none;
-    }
-
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .link-group a {
-        font-size: 13px;
-    }
-
-    .flex::nth-child(2) {
-        border-left: 1px solid rgb(34, 34, 37);
-    }
-
-}
-
-@media screen and (max-width: 900px) {
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .link-group {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .flex {
-        padding-top: 25px;
-    }
-}
-
-@media screen and (max-width: 1280px) {
-    .nav-filmes {
-        display: none;
-    }
 }
